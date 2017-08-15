@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     'colorfield',
     'nested_inline',
     'baton.autodiscover',
-    'crispy_forms',
+
 ]
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'

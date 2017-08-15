@@ -102,6 +102,9 @@ class Product(models.Model):
                                null=True)
     main_image = models.ImageField(null=True, )
 
+    similars = models.ManyToManyField('Product', blank=True)
+
+
     def __str__(self):
         return self.name
 
