@@ -1,0 +1,298 @@
+<!DOCTYPE html> {% extends 'base.html' %} {% load static %} {% block head %}
+<title>{{ product.title }}</title>
+<link rel="stylesheet" href="{% static 'css/product.css' %}">
+<link rel="stylesheet" href="{% static 'css/lightgallery.css' %}">
+<link rel="stylesheet" href="{% static 'css/hexagons.min.css' %}"> {% endblock %} {% block content %}
+<div class=" product-iim">
+    <div class="description">
+        <div class="pro-nav">
+            <div class="col-sm-12">
+                <ul>
+                    <li><a href="#">خانه</a></li>
+                    <li><a href="#">زیورآلات</a></li>
+                    <li><a href="#">گوشواره</a></li>
+                    <li><a href="#"><b>ساعت دست ساز زنانه میو مدل ۶۵۰</b></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="top-meno container">
+
+        <div class=" pro-main-det ">
+            <h4>ساعت دست ساز زنانه میو مدل ۶۵۰</h4>
+            <h5>تولید کننده : سام</h5>
+            <img class="img-pr" src="{% static 'img/sample.jpeg' %}" alt="">
+            <p>
+                ساعت مدل 646 برند «میو» (Mio) از نوع مچی و ویژه بانوان است. رنگ نارنجی بند چرمی 646 با گل‌های رنگارنگ صفحه آن هماهنگ است. قاب دایره‌ای شکل، عقربه‌های طرحدار و سگک ساده‌ی 646 همگی نقره‌ای رنگ و فلزی هستند. بند ساعت میو مدل 646 قابلیت تنظیم دارد و برای
+            </p>
+        </div>
+        <div class=" pic-kala no-padding">
+            <div class="mother">
+                <div class="bold-kala">
+                    <img class="pro-main-image col-sm-12" src="{% static 'img/saat.JPG' %}" alt="">
+                </div>
+            </div>
+            <div class=" owl-carousel small-pic  col-sm-12" dir="ltr" id="lightgallery" >
+
+                    <a href="{% static 'img/saat4.JPG' %}" class="item"><img class="pro-more-image img-responsive" src="{% static 'img/saat4.JPG' %}" alt=""></a>
+                    <a href="{% static 'img/saat4.JPG' %}" class="item"><img class="pro-more-image img-responsive" src="{% static 'img/saat4.JPG' %}" alt=""></a>
+                    <a href="{% static 'img/saat3.JPG' %}" class="item"><img class="pro-more-image img-responsive" src="{% static 'img/saat3.JPG' %}" alt=""></a>
+                    <a href="{% static 'img/saat2.JPG' %}" class="item"><img class="pro-more-image img-responsive" src="{% static 'img/saat2.JPG' %}" alt=""></a>
+                    <a href="{% static 'img/saat.JPG' %}" class="item"><img class="pro-more-image img-responsive" src="{% static 'img/saat.JPG' %}" alt=""></a>
+                    <a href="{% static 'img/saat.JPG' %}" class="item"><img class="pro-more-image img-responsive" src="{% static 'img/saat.JPG' %}" alt=""></a>
+
+            </div>
+        </div>
+        <div class=" pro-price-det">
+            <div class="title-product col-sm-6">
+                مناسب برای :خانم ها
+            </div>
+            <div class="title-product1 col-sm-6">
+                نوع کاربری: فشن
+
+            </div>
+            <div class="col-sm-12 box-color-ex">
+                <div class="col-sm-4 no-padding desi-color">
+                    <h5>رنگ:</h5>
+                </div>
+                <div class="col-sm-4">
+                    <div>
+                        <div class="foo check-green"></div>
+                        <div class="checkbox"><label>
+                        <label>
+                      <input type="checkbox" value="">
+                      <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                    </label> سبز</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div>
+                        <div class="foo check-red"></div>
+                        <div class="checkbox"><label>
+                          <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                      </label> قرمز</label>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-sm-2"></div>
+            <div class="demo col-sm-8">
+                <fieldset class="rating">
+                    <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5" title="Awesome - 5 stars"></label>
+                    <input type="radio" id="star4half" name="rating" value="4.5" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                    <input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4" title="Pretty good - 4 stars"></label>
+                    <input type="radio" id="star3half" name="rating" value="3.5" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                    <input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3" title="Meh - 3 stars"></label>
+                    <input type="radio" id="star2half" name="rating" value="2.5" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                    <input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+                    <input type="radio" id="star1half" name="rating" value="1.5" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                    <input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1" title="Sucks big time - 1 star"></label>
+                    <input type="radio" id="starhalf" name="rating" value="0.5" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                </fieldset>
+
+            </div>
+            <div class="col-sm-2"></div>
+            <div class="col-sm-12 garanti">
+                <h4>گارانتی اصالت و سلامت فیزیکی</h4>
+
+            </div>
+            <div class="col-sm-12 price-pr">
+                <h3> قیمت: <span> ۳۸۰۰۰ </span> تومان </h3>
+            </div>
+            <div class="col-sm-1  hide-div">
+
+            </div>
+            <div class="col-sm-10 box-basket">
+                <a href="http://127.0.0.1:8000/cart/1">
+                    <div class="col-sm-1 hide-div">
+
+                    </div>
+                    <div class="col-xs-8 no-padding ">
+
+                        <h4>اضافه کردن به سبد خرید </h4>
+                    </div>
+                    <div class="col-xs-2 no-padding">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-sm-1 hide-div">
+
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-1 hide-div">
+
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="part-2">
+
+        <div class="col-30">
+        </div>
+
+        <div class="col-40">
+            <div class="panel with-nav-tabs panel-default">
+                <div class="panel-heading head-of-detail">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#tab1default" data-toggle="tab" class="pro-tab">مشخصات بیشتر</a></li>
+                        <li><a href="#tab2default" data-toggle="tab" class="pro-tab">نظرات کاربران</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-30 no-padding">
+        </div>
+
+    </div>
+    <div class="col-sm-12 hide-tabs">
+        <div class="panel with-nav-tabs panel-default">
+            <div class="panel-body">
+                <div class="tab-content">
+                    <div class="tab-pane fade in active" id="tab1default">Default 1</div>
+                    <div class="tab-pane fade" id="tab2default">Default 2</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container promotions ws-skewed-top">
+    <h3>
+      محصولات مرتبط
+  </h3>
+    <div class="">
+      <div class="col-sm-12">
+          <div class="promo-owl owl-carousel" dir="ltr">
+              <div>
+                  <a class="promo-pic" href="#">
+                      <img class="img-responsive" src="{% static 'img/p12.jpg' %}" alt="">
+                      <div class="prom-la">
+                          <label class="prf">گردنبند مروارید</label>
+                          <label class="pro-labal">تولید کننده:عرفان</label>
+                          <label class="have-border">۳۰۰۰۰تومان</label>
+                      </div>
+                  </a>
+
+              </div>
+              <div>
+                  <a class="promo-pic" href="#">
+                      <img class="img-responsive" src="{% static 'img/p6.jpg' %}" alt="">
+                      <div class="prom-la">
+                          <label class="prf">گردنبند مروارید</label>
+                          <label class="pro-labal">تولید کننده:عرفان</label>
+                          <label class="have-border">۳۰۰۰۰تومان</label>
+                      </div>
+                  </a>
+
+              </div>
+              <div>
+                  <a class="promo-pic" href="#">
+                      <img class="img-responsive" src="{% static 'img/p6.jpg' %}" alt="">
+                      <div class="prom-la">
+                          <label class="prf">گردنبند مروارید</label>
+                          <label class="pro-labal">تولید کننده:عرفان</label>
+                          <label class="have-border">۳۰۰۰۰تومان</label>
+                      </div>
+                  </a>
+
+              </div>
+              <div>
+                  <a class="promo-pic" href="#">
+                      <img class="img-responsive" src="{% static 'img/p8.jpg' %}" alt="">
+                      <div class="prom-la">
+                          <label class="prf">گردنبند مروارید</label>
+                          <label class="pro-labal">تولید کننده:عرفان</label>
+                          <label class="have-border">۳۰۰۰۰تومان</label>
+                      </div>
+                  </a>
+
+              </div>
+              <div>
+                  <a class="promo-pic" href="#">
+                      <img class="img-responsive" src="{% static 'img/p10.jpg' %}" alt="">
+                      <div class="prom-la">
+                          <label class="prf">گردنبند مروارید</label>
+                          <label class="pro-labal">تولید کننده:عرفان</label>
+                          <label class="have-border">۳۰۰۰۰تومان</label>
+                      </div>
+                  </a>
+
+              </div>
+          </div>
+      </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+{% endblock %} {% block script %}
+<script src="{% static 'js/lightgallery.js'%}"></script>
+<script>
+$(document).ready(function() {
+    $("#lightgallery").lightGallery({
+      selector: '.item'
+    });
+});
+    $(window).resize(function() {
+        var height = $(".pic-kala").height();
+        $(".top-meno").height(height);
+    });
+    $('.promo-owl').owlCarousel({
+        loop: false,
+        nav: true,
+        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+        responsive: {
+            0: {
+                items: 1
+            },
+            768: {
+                items: 2
+            },
+            992: {
+                items: 4
+            },
+            1200: {
+                items: 5
+            }
+        }
+    })
+
+
+    $('.small-pic').owlCarousel({
+        loop: false,
+        nav: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            500: {
+                items: 2
+            },
+            768: {
+                items: 3
+            },
+            992: {
+                items: 4
+            },
+            1200: {
+                items: 5
+            }
+        }
+    })
+    $(document).ready(function() {
+        $(".hide-tabs").hide();
+    });
+    $(document).ready(function() {
+        $(".pro-tab").click(function() {
+            $(".hide-tabs").slideDown();
+        });
+    });
+
+</script>
+{% endblock %}

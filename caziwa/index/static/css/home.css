@@ -1,0 +1,888 @@
+/*.ws-skewed-top:after {
+    content: "";
+    width: 110%;
+    left: -10px;
+    position: absolute;
+    display: table;
+    z-index: 1;
+    height: 55px;
+    top: -25px;
+    background: #fff;
+    transform: rotateZ(2deg);
+    -webkit-transform: rotateZ(2deg);
+    -moz-transform: rotateZ(2deg);
+    -o-transform: rotateZ(2deg);
+}
+
+.ws-skewed-bottom:before {
+    content: "";
+    width: 110%;
+    left: -10px;
+    position: absolute;
+    display: table;
+    z-index: 1;
+    height: 55px;
+    bottom: -25px;
+    background: #fff;
+    transform: rotateZ(-2deg);
+    -webkit-transform: rotateZ(-2deg);
+    -moz-transform: rotateZ(-2deg);
+    -o-transform: rotateZ(-2deg);
+}*/
+.main-owl {
+    margin-top: 69px;
+}
+.text-capital {
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+}
+
+.text-capital h3 {
+    background-color: rgba(31, 136, 141, 0.89);
+    border-radius: 9px;
+    padding: 3px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 15px;
+}
+
+.text-capital p {
+    margin-top: -9px;
+}
+
+.pict {
+    z-index: 1;
+    position: absolute;
+    bottom: 0px;
+}
+
+.pict img {
+    width: 100%;
+}
+
+.no-pad-left {
+    padding-left: 5px;
+}
+
+.responsiv-pic {
+    width: 100%;
+}
+
+.cashi {
+    margin-bottom: 618px;
+}
+
+.padding-image {
+    padding-right: 0px;
+    padding-bottom: 9px;
+    padding-left: 9px;
+}
+
+.pad-img {
+    padding-right: 0px;
+    padding-left: 9px;
+}
+
+.pad-LR {
+    padding: 0px 50px;
+}
+
+.pad-to-all {
+    padding: 0 200px;
+}
+
+.portfolio-holder {
+    margin: 10px 0px 10px;
+    background: #1eb5bc;
+    height: 306px;
+    padding: 4px 0 0 0;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.portfolio-holder .owl-stage-outer {
+    min-height: 300px;
+}
+
+.portfolio-holder.ws-skewed-bottom:before, .portfolio-holder.ws-skewed-bottom:after {
+    background: #f7f7f7;
+    display: none;
+}
+
+.portfolio {
+    z-index: 2;
+    position: relative;
+}
+
+.portfolio h3 {
+    margin-top: -10px;
+    font-weight: 100;
+    font-size: 32px;
+    text-align: center;
+    z-index: 0;
+}
+
+.portfolio h3 img, .promotions h3 img, .most-viewed h3 img, .artists h3 img {
+    position: relative;
+    z-index: 2;
+    width: 50px;
+}
+
+.portfolio-owl {
+    padding: 40px 0;
+    /*min-height: 500px;*/
+    /*margin: -150px 0*/
+}
+
+.text-png {
+    color: #fff;
+    text-align: center;
+}
+
+.pic-png {
+    text-align: center;
+}
+
+.pics-png {
+    margin-top: 0px;
+}
+
+.txt-png {
+    font-size: 17px;
+    color: #fff;
+}
+
+.big-photo {
+    position: relative;
+    top: -150px;
+}
+
+.photo-big {
+    width: 100%;
+}
+
+
+/*SS HEXA*/
+
+.ss-hexagon {
+    text-align: center;
+    padding: 50px 0 0;
+}
+
+.ss-hexagon-one {
+    position: relative;
+    width: 30%;
+    display: inline-block;
+    margin: -10px 5px 0;
+    overflow: hidden;
+}
+
+.ss-hexagon-one svg {
+    position: absolute;
+    top: -1%;
+    left: -1%;
+    right: -1%;
+    overflow: hidden;
+    bottom: -1%;
+    width: 102%;
+    height: 102%;
+}
+
+.ss-hexagon-one svg g {
+    fill: #f7f7f7;
+}
+
+.ss-hexagon-one img {
+    width: 98%;
+}
+
+.ss-hex-ov {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -50%;
+    padding: 20px 0 40px;
+    color: #444;
+    background: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.ss-hexagon-one:hover .ss-hex-ov {
+    bottom: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.svg-one {
+    position: absolute;
+    bottom: 0;
+}
+
+-owl {
+    margin-top: 30px;
+}
+
+.svg-overlay {
+    font-size: 40px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    padding: 60px 0;
+    right: -100%;
+    width: 200%;
+    color: #777;
+    background: rgba(255, 255, 255, 0.8);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+}
+
+.item:hover .svg-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.promotions {
+    position: relative;
+    background: #f1f1f1;
+    padding-bottom: 38px;
+    top: -138px;
+    padding: 0px 95px;
+}
+
+.promotions.ws-skewed-top::after {
+    z-index: -1;
+    display: none;
+}
+
+.promotions h3 {
+    color: #000;
+    font-weight: 100;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 25px;
+    margin-top: 4px;
+}
+
+.promo-owl * {}
+
+.promo-owl {
+    margin-top: -60px position: relative;
+}
+
+.promo-owl .owl-nav div, .portfolio-owl .owl-nav div {
+    position: absolute;
+    top: 45%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #eee;
+}
+
+.promo-owl .owl-nav, .portfolio-owl .owl-nav, .artists-owl .owl-nav {
+    transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    visibility: visible;
+    opacity: 1;
+}
+
+.promo-owl .owl-nav .disabled, .portfolio-owl .owl-nav .disabled, .artists-owl .owl-nav .disabled {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.promo-owl .owl-nav .disabled i, .portfolio-owl .owl-nav .disabled i {
+    color: #999;
+}
+
+.portfolio-owl .owl-nav i, .portfolio-owl .owl-nav i, .promo-owl .owl-nav i, .promo-owl .owl-nav i {
+    color: rgb(92, 147, 255);
+    font-size: 25px;
+    padding: 4px;
+    position: relative;
+}
+
+.portfolio-owl .owl-nav .owl-prev i, .promo-owl .owl-nav .owl-prev i {
+    left: 5px;
+    top: -2px;
+}
+
+.portfolio-owl .owl-nav .owl-next i, .promo-owl .owl-nav .owl-next i {
+    right: -8px;
+    top: -2px;
+}
+
+.portfolio-owl .owl-nav .owl-prev, .promo-owl .owl-nav .owl-prev {
+    left: -30px;
+}
+
+.portfolio-owl .owl-nav .owl-next, .promo-owl .owl-nav .owl-next {
+    right: -30px;
+}
+
+.promo-owl .owl-item {
+    position: relative;
+    z-index: 2;
+}
+
+.pad-to-prom {
+    padding: 0 50px;
+}
+
+.promo-pic {
+    display: block;
+    position: relative;
+    padding: 10px;
+}
+
+.promo-pic label {
+    font-size: 18px;
+    text-align: center;
+    display: block;
+        margin: 0px 35px;
+}
+
+.prf, .pro-labal {
+    color: #000;
+    font-weight: 100;
+}
+
+.have-border {
+    background-color: #1eb5bc;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    color: #fff;
+    font-weight: 400;
+    margin: 0px 55px;
+    padding: 3px;
+}
+
+.promo-pic label.prf {
+    padding-top: 10px;
+}
+
+.prom-la {
+    background-color: #fff;
+    padding-bottom: 10px;
+}
+
+.promotions-background {
+    height: 250px;
+}
+
+.promo-img {
+    height: 300px;
+    width: 100%;
+    position: relative;
+    z-index: -2;
+}
+
+.promo-img img {
+    width: 100%;
+    height: 300px;
+}
+
+.artists {
+    position: relative;
+    top: -123px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 29px;
+    background-color: #1eb5bc;
+    background-image: url("../img/arti.jpg");
+    background-size: cover;
+    height: 330px;
+}
+
+.artists h3 {
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+.artists-owl {
+    margin-top: -60px position: relative;
+    top: -24px;
+    padding: 0px 50px;
+}
+
+.artists-owl .owl-item {
+    text-align: center;
+}
+
+.artists-owl a {
+    width: 150px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.artists-owl .owl-item a img {
+    width: 150px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 5px solid #fff;
+}
+
+.artists-owl .owl-nav>div {
+    position: absolute;
+    top: 40%;
+}
+
+.artists-owl .owl-nav>div i {
+    font-size: 25px;
+    color: rgb(255, 207, 62)
+}
+
+.artists-owl .owl-nav>.owl-prev {
+    right: 0;
+}
+
+.artists-owl .owl-nav>.owl-next {
+    left: 0;
+}
+
+.artists-lab {
+    background-color: #fff;
+    width: 80%;
+    text-align: -webkit-center;
+    margin: auto;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.artists-lab label {
+    display: block;
+    color: #000;
+    font-size: 13px;
+}
+
+.artists-lab label:first-child {
+    margin-top: 21px;
+    padding-top: 4px;
+    margin-bottom: 1px;
+}
+
+.artists-lab label:last-child {
+    padding-bottom: 3px;
+}
+
+.back-end {
+    background-color: #1eb5bc;
+    text-align: center;
+    position: relative;
+    top: -124px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.p-1 {
+    position: absolute;
+    top: 81px;
+    width: 160px;
+    right: 272px;
+}
+
+.p-2 {
+    width: 300px;
+}
+
+.p-3 {
+    position: absolute;
+    top: 56px;
+    right: -24px;
+    width: 150px;
+}
+
+.back-end p {
+    color: #fff;
+    padding: 0 0 26px;
+    font-size: 16px;
+}
+
+.back-end h3 {
+    font-size: 35px;
+    color: #fff;
+    margin: 33px 0 19px;
+}
+
+.back-end h3 span {
+    color: #ffce00;
+}
+
+.back-end button {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+.categories {
+    height: 500px;
+    padding-top: 25px;
+}
+
+.owl-carousel.owl-loaded.portfolio-owl {
+    display: none;
+}
+
+@media screen and (min-width:1379px) {
+    /*.ws-skewed-top:after {
+        height: 56px;
+        transform: rotateZ(1deg);
+        -webkit-transform: rotateZ(1deg);
+        -moz-transform: rotateZ(1deg);
+        -o-transform: rotateZ(1deg);
+    }
+    .ws-skewed-bottom:before {
+        height: 56px;
+        transform: rotateZ(-1deg);
+        -webkit-transform: rotateZ(-1deg);
+        -moz-transform: rotateZ(-1deg);
+        -o-transform: rotateZ(-1deg);
+    }*/
+}
+
+@media screen and (min-width:1921px) {
+    /*.ws-skewed-top:after {
+        height: 56px;
+        transform: rotateZ(0.5deg);
+        -webkit-transform: rotateZ(0.5deg);
+        -moz-transform: rotateZ(0.5deg);
+        -o-transform: rotateZ(0.5deg);
+    }
+    .ws-skewed-bottom:before {
+        height: 56px;
+        transform: rotateZ(-0.5deg);
+        -webkit-transform: rotateZ(-0.5deg);
+        -moz-transform: rotateZ(-0.5deg);
+        -o-transform: rotateZ(-0.5deg);
+    }*/
+}
+
+@media screen and (max-width:1109px) {
+    .text-capital h3 {
+        font-size: 21px;
+        margin-left: 51px;
+        margin-right: 51px;
+    }
+    .pict img {
+        width: 100%;
+    }
+    .portfolio-holder {
+        height: 291px;
+    }
+    .cashi {
+        margin-bottom: 542px;
+    }
+}
+
+@media screen and (max-width:1067px) {
+    .main-owl {
+        margin-top: 105px;
+    }
+    .pad-to-prom {
+        padding: 0 50px;
+    }
+    .artists-owl .owl-item a img {
+        width: 150px;
+    }
+    .p-1 {
+        top: 85px;
+        width: 153px;
+        right: 129px;
+    }
+    .p-3 {
+        top: 64px;
+        right: 26px;
+        width: 141px;
+    }
+    .news {
+        margin-top: -124px;
+    }
+    .cashi {
+        margin-bottom: 511px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .pad-to-all {
+        padding: 0px;
+    }
+    .main-owl {
+        margin-top: 13px;
+    }
+    .txt-png {
+        font-size: 13px;
+    }
+    .p-1 {
+        right: 110px;
+    }
+    .portfolio-holder {
+        height: 253px;
+    }
+    .pict img {
+        width: 100%;
+    }
+    .text-capital p {
+        font-size: 13px;
+    }
+    .text-capital h3 {
+        font-size: 17px;
+    }
+    .cashi {
+        margin-bottom: 473px;
+    }
+    .promotions h3 {
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width:866px) {
+    .cashi {
+        margin-bottom: 421px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .main-owl {
+        margin-top: 2px;
+    }
+    .promotions {
+        padding: 0px 29px;
+    }
+    .pad-to-prom {
+        padding: 0px;
+    }
+    .one-col {
+        margin-right: -6px;
+        margin-top: -3px;
+    }
+    .one-col img {
+        width: 101%;
+        margin-top: 7px;
+    }
+    .pad-to-all {
+        padding: 0px;
+    }
+    .portfolio h3, .promotions h3, .most-viewed h3, .artists h3 {
+        font-size: 24px;
+    }
+    .ss-hexagon {
+        display: none;
+    }
+    .portfolio-owl .ss-hexagon-one {
+        margin: 0 10%;
+        width: 80%;
+    }
+    .owl-carousel.owl-loaded.portfolio-owl {
+        display: block;
+    }
+    .ss-hexagon-one .ss-hex-ov {
+        bottom: 0;
+        opacity: 1;
+        visibility: visible;
+    }
+    .p-3 {
+        top: 52px;
+        right: 37px;
+        width: 127px;
+    }
+    .p-2 {
+        width: 263px;
+    }
+    .p-1 {
+        top: 70px;
+        width: 141px;
+        right: 78px;
+    }
+    .txt-png {
+        font-size: 12px;
+    }
+    .text-png {
+        font-size: 14px;
+    }
+    .pic-png img {
+        width: 123px;
+    }
+    br.hid {
+        display: none;
+    }
+    .aa {
+        padding: 3px;
+    }
+    .text-capital h3 {
+        font-size: 13px;
+        margin-left: 256px;
+        margin-right: 256px;
+    }
+    .text-capital p {
+        font-size: 11px;
+    }
+    .portfolio-holder {
+        height: 202px;
+    }
+    .pict img {
+        width: 100%;
+    }
+    .pad-LR {
+        padding: 0px 0px;
+        padding-right: 8px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .portfolio h3, .promotions h3, .most-viewed h3, .artists h3 {
+        font-size: 18px;
+    }
+    .p-3 {
+        width: 102px;
+    }
+    .p-2 {
+        width: 228px;
+    }
+    .p-1 {
+        width: 115px;
+    }
+    .text-capital h3 {
+        font-size: 11px;
+        margin-left: 236px;
+        margin-right: 236px;
+    }
+    .portfolio-holder {
+        height: 180px;
+    }
+}
+
+@media screen and (max-width:642px) {
+    .cashi {
+        margin-bottom: 391px;
+    }
+}
+
+@media screen and (max-width:592px) {
+    .cashi {
+        margin-bottom: 364px;
+    }
+    .txt-png {
+        font-size: 8px;
+    }
+    .pic-png img {
+        width: 82px;
+    }
+    .text-png {
+        font-size: 10px;
+    }
+    .text-capital h3 {
+        font-size: 10px;
+        margin-left: 210px;
+        margin-right: 210px;
+    }
+    .pict img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:554px) {
+    .cashi {
+        margin-bottom: 353px;
+    }
+    .p-1 {
+        top: 66px;
+        width: 58px;
+        right: 78px;
+    }
+    .p-2 {
+        width: 167px;
+    }
+    .p-3 {
+        top: 52px;
+        right: 37px;
+        width: 60px;
+    }
+    .back-end h3 {
+        font-size: 26px;
+    }
+    .back-end p {
+        font-size: 11px;
+    }
+    .back-end button {
+        font-size: 9px;
+    }
+    .no-pad-left {
+        padding-left: 1px;
+    }
+    .one-col {
+        width: 70%;
+    }
+    .text-capital h3 {
+        font-size: 8px;
+    }
+    .text-capital p {
+        font-size: 9px;
+    }
+    .portfolio-holder {
+        height: 152px;
+    }
+}
+
+@media screen and (max-width:530px) {
+    .text-capital h3 {
+        font-size: 9px;
+        margin-left: 109px;
+        margin-right: 109px;
+    }
+    .cashi {
+        margin-bottom: 345px;
+    }
+}
+
+@media screen and (max-width:430px) {
+    .cashi {
+        margin-bottom: 314px;
+    }
+    .p-3 {
+        top: 38px;
+        right: 37px;
+    }
+    .p-2 {
+        width: 146px;
+        margin-right: -22px;
+    }
+    .p-1 {
+        top: 56px;
+        width: 58px;
+        right: 29px;
+    }
+}
+
+@media screen and (max-width:372px) {
+    .text-capital h3 {
+        font-size: 7px;
+        margin-left: 71px;
+        margin-right: 71px;
+    }
+    .portfolio-holder {
+        height: 115px;
+    }
+    .cashi {
+        margin-bottom: 281px;
+    }
+}

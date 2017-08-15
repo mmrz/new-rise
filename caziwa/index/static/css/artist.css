@@ -1,0 +1,90 @@
+.artist-pg {
+    margin-bottom: 120px;
+    margin-top: 83px;
+}
+
+.pro-nav {
+    padding-bottom: 7px;
+    background-color: #fff;
+    padding-top: 7px;
+    overflow: hidden;
+}
+
+.box-tozihat {
+    margin-top: 12px;
+    background-color: #fff;
+    height: 265px;
+    width: 100%;
+}
+
+.logo-holder {
+    margin-bottom: 23px;
+}
+
+.honar {
+    background-color: #fff;
+    margin-top: 12px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.honar p {
+    width: 50%;
+    padding-top: 13px;
+}
+
+.pers {
+    text-align: left;
+    float: right;
+    padding-left: 10px;
+}
+
+.eng {
+    text-align: right;
+    float: left;
+    padding-right: 10px;
+}
+.grid {
+padding: 1px;
+margin: 0 auto;
+}
+
+.grid--item {
+position: relative;
+margin-top: -90px;
+margin-right: 5px;
+margin-left: 5px;
+width: calc(33.33% - 10px);
+float: left;
+transition: all 0.5s;
+overflow: hidden;
+-webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+-webkit-shape-outside: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+.grid--item:before {
+display: block;
+padding-top: 120%;
+content: '';
+}
+.grid--item:nth-child(1), .grid--item:nth-child(2) {
+margin-top: 0;
+}
+.grid--item:nth-child(7n - 1), .grid--item:nth-child(1) {
+margin-left: 165px;
+}
+
+.img {
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+background-position: center center;
+background-size: cover;
+overflow: hidden;
+-webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}

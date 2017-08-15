@@ -1,0 +1,777 @@
+.news {
+    margin-top: 0px;
+}
+
+.pro-name {
+    display: inline-block;
+    font-size: 12px;
+}
+
+.checkbox-custom, .radio-custom {
+    opacity: 0;
+    position: absolute;
+
+}
+
+.checkbox-custom, .checkbox-custom-label, .radio-custom, .radio-custom-label {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px;
+    cursor: pointer;
+
+}
+
+.checkbox-custom-label, .radio-custom-label {
+    position: relative;
+
+}
+
+.checkbox-custom + .checkbox-custom-label:before, .radio-custom + .radio-custom-label:before {
+    content: '';
+    background: #ddd;
+    border: 2px solid #ddd;
+    display: inline-block;
+    vertical-align: middle;
+    width: 15px;
+    height: 15px;
+    padding: 2px;
+    margin-right: 10px;
+    text-align: center;
+        border-radius:50%;
+}
+
+.checkbox-custom:checked + .checkbox-custom-label:before {
+    background: #1eb5bc;
+      border-color: #1eb5bc;
+
+}
+
+.radio-custom + .radio-custom-label:before {
+    border-radius: 50%;
+}
+
+.radio-custom:checked + .radio-custom-label:before {
+    background: #1eb5bc;
+    border-color: #1eb5bc;
+}
+
+
+.checkbox-custom:focus + .checkbox-custom-label, .radio-custom:focus + .radio-custom-label {
+  outline: 1px solid #ddd; /* focus style */
+}
+.blue-part {
+    height: 205px;
+}
+
+.pro-nav {
+    padding: 5px 0px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    top: -10px;
+    right: 10px;
+    float: right;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.pro-nav ul li {
+    right: 17px;
+}
+
+.empty-part {
+    /* position: absolute; */
+    width: 280px;
+    background-color: #f1f1f1;
+    height: 46px;
+    position: absolute;
+    left: 0;
+    top: -3px;
+    transform: skew(-36deg);
+    -webkit-transform: skewX(-36deg);
+    -moz-transform: skewX(-36deg);
+    -o-transform: skewX(-36deg);
+}
+
+.catalog {
+    position: relative;
+    padding-top: 8px;
+    margin-top: 83px;
+    overflow: hidden;
+}
+
+.search-bar {
+    margin: 7px 0px;
+    width: 100%;
+    padding: 4px;
+    background-color: #fff;
+    position: relative;
+    top: -24px;
+}
+
+.empty-part-2 {
+    position: absolute;
+    width: 25px;
+    height: 34px;
+    background-color: #f1f1f1;
+    padding-top: 45px;
+    float: left;
+    left: 0;
+    top: 0px;
+}
+
+.comp-butt {
+    position: relative;
+}
+
+.pagination {
+    display: inline-block;
+    padding-left: 0;
+    margin: -11px 0;
+    border-radius: 8px;
+    float: left;
+    margin-top: 0px;
+}
+
+.pagination a {
+    color: black;
+    float: right;
+    padding: 2px 8px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+.pagination a.active {
+    background-color: #ddd;
+    color: #000;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+.ination-button {
+    background-color: #fff;
+    margin-bottom: 12px;
+    text-align: center;
+    padding: 12px 7px;
+}
+
+.ination-button .pagination a {
+    padding: 2px 9px;
+    margin-top: -8px;
+}
+
+#catalog-search-box>input {
+    padding: 15px;
+    border: 0px solid #d1d1d1;
+    background: #f1f1f1;
+    width: 200px;
+    padding: 6px 15px 6px 35px;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    width: 100%;
+}
+
+.cata-det {
+    background-color: #fff;
+    padding: 19px;
+}
+
+.compare-button {
+    background-color: #1EB5BC;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 50px;
+    padding: 0;
+}
+
+.form-control {
+    display: inline-block;
+    width: auto;
+    border: 0px solid #ccc;
+    box-shadow: 0;
+    color: #1EB5BC;
+    box-shadow: inset 0 0px 0px rgba(0, 0, 0, .075);
+}
+
+.catalog-list {
+    background-color: #eee;
+    width: 100%;
+}
+
+.catalog-images {
+    margin: 25px 0px;
+    font-size: 18px;
+}
+
+.catalog-images .text-right {
+    color: #666;
+    padding: 4px 0;
+}
+
+.catalog-images a {
+    color: black;
+    text-decoration: none;
+}
+
+.form-control:focus {
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0), 0 0 0px rgba(102, 175, 233, 0);
+    box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0), 0 0 0px rgba(102, 175, 233, 0);
+}
+
+.compare-btn a {
+    display: block;
+    border-radius: 25px;
+    background: #66afe9;
+    text-align: center;
+    border: 1px solid #66afe9;
+    width: 100%;
+    padding: 8px 0;
+    font-size: 16px;
+    color: #fff;
+}
+
+.input-holder {
+    position: relative;
+}
+
+.input-holder input {
+    /* padding: 8px 16px 8px 32px; */
+    background: #fff;
+    /* font-size: 16px; */
+    /* padding: 0 11px; */
+    padding-right: 9px;
+    border-radius: 8px;
+    border: 0;
+    width: 100%;
+    border: 1px solid #1eb5bc;
+    transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.input-holder input:focus {
+    border: 1px solid #66afe9;
+}
+
+.input-holder i {
+    position: absolute;
+    color: #66afe9;
+    top: 3px;
+    left: 11px;
+    font-size: 18px;
+}
+
+.paging-holder {
+    direction: ltr;
+    text-align: center;
+    padding: 0 0 20px;
+}
+
+.paging-holder .paging-one {
+    color: #555;
+    padding: 0 8px;
+    font-size: 20px;
+}
+
+.paging-holder .paging-one.active {
+    color: #66afe9;
+    cursor: default;
+}
+
+.paging-holder i {
+    color: #66afe9;
+    font-size: 20px;
+}
+
+.paging-holder span {
+    position: relative;
+    top: -5px;
+    color: #555;
+}
+
+.cata-det h5 {
+    font-weight: 200;
+    font-size: 16px;
+}
+
+.cata-det>* {
+    margin-bottom: 30px;
+}
+
+.cata-brand {
+    border-bottom: 2px solid #1eb5bc;
+    padding-bottom: 12px;
+}
+
+.cata-brand label {
+    padding-right: 4px;
+    font-size: 13px;
+    position: relative;
+    top: 3px;
+}
+
+.cata-product {
+    border-bottom: 2px solid #1eb5bc;
+    padding-bottom: 12px;
+}
+
+.cata-product label {
+    font-size: 13px;
+    padding: 4px;
+}
+
+.cata-price {
+    border-bottom: 2px solid #1eb5bc;
+    padding-bottom: 44px;
+}
+
+.cata-price .ui-widget-content {
+    background: #ccc;
+    height: 1px;
+    width: 100%;
+}
+
+.cata-price .ui-slider .ui-slider-handle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 0;
+    background: #444;
+}
+
+.cata-price .ui-slider-horizontal .ui-slider-range {
+    background: #66afe9;
+    height: 3px;
+}
+
+.hb-xs-margin {
+    width: 100%;
+}
+
+.cata-item img {
+    width: 100%;
+    padding: 0 0;
+}
+
+.cata-item p {
+    font-size: 12px;
+    font-weight: normal;
+    padding: 7px 0;
+}
+
+.cart-catalog {
+    position: absolute;
+    z-index: 1030;
+    bottom: 37px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgb(69, 195, 86);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1), 0 2px 6px -2px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+}
+
+.cart-btn.vis {
+    bottom: 20px;
+}
+
+.cart-catalog i {
+    padding: 16px 14px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.cart-catalog i p {
+    font-weight: bold;
+    display: inline;
+}
+
+.demo .rating {
+    border: none;
+    float: left;
+    direction: ltr;
+    font-size: 9px;
+    top: -39px;
+}
+
+.demo .rating>input {
+    display: none;
+}
+
+.demo .rating>label:before {
+    margin: 1px;
+    font-size: 1.25em;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f005";
+}
+
+.demo .rating>.half:before {
+    content: "\f089";
+    position: absolute;
+}
+
+.demo .rating>label {
+    color: #ddd;
+    float: right;
+}
+
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.demo .rating>input:checked~label,
+/* show gold star when clicked */
+
+.demo .rating:not(:checked)>label:hover,
+/* hover current star */
+
+.demo .rating:not(:checked)>label:hover~label {
+    color: #1eb5bc;
+}
+
+
+/* hover previous stars in list */
+
+.demo .rating>input:checked+label:hover,
+/* hover current star when changing rating */
+
+.demo .rating>input:checked~label:hover, .demo .rating>label:hover~input:checked~label,
+/* lighten current selection */
+
+.demo .rating>input:checked~label:hover~label {
+    color: #1eb5bc;
+}
+
+
+/****** Style Star Rating Widget *****/
+
+.case-editor .rating1 {
+    border: none;
+    float: left;
+}
+
+.case-editor .rating1>input {
+    display: none;
+}
+
+.case-editor .rating1>label:before {
+    margin: 1px;
+    font-size: 1.25em;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f005";
+}
+
+.case-editor .rating1>.half:before {
+    content: "\f089";
+    position: absolute;
+}
+
+.case-editor .rating1>label {
+    color: #ddd;
+    float: right;
+}
+
+.boxx {
+    background-color: #fff;
+    padding: 10px 6px;
+}
+
+.cata-item-name {
+    font-size: 12px;
+}
+
+.box-bottun {
+    background-color: #f1f1f1;
+    border-radius: 7px;
+    margin-top: 12px;
+    padding: 8px 0;
+}
+
+.i-plus {
+    padding: 0;
+    padding-top: 7px;
+}
+
+.i-plus a i {
+    font-size: 40px;
+    color: #1EB5BC;
+    position: relative;
+    right: -12px;
+    top: -2px;
+}
+
+.block-pric {
+    text-decoration: line-through;
+    color: red;
+    font-weight: 300;
+}
+
+.block-pric1 {
+    font-weight: 300;
+    color: green;
+}
+
+.main-cata {
+    position: relative;
+    top: -19px;
+}
+
+.foo {
+    float: left;
+    width: 20px;
+    height: 20px;
+        margin: 0px 14px;
+    margin-left: 62px;
+    border: 1px solid rgba(0, 0, 0, .2);
+}
+
+.check-withe {
+    background: white;
+}
+
+.check-yellow {
+    background: yellow;
+}
+
+.check-blue {
+    background: blue;
+}
+
+.check-purple {
+    background: purple;
+}
+
+.check-red {
+    background: red;
+}
+
+.desi-color {
+    width: 18%;
+    margin-top: 5px;
+}
+
+.color-picker {
+    float: left;
+    width: 8px;
+    height: 8px;
+    margin: 1px;
+    border: 1px solid rgba(0, 0, 0, .2);
+}
+
+.color-box {
+    margin-top: 5px;
+}
+
+.right-pad {
+    padding: 0;
+    padding-right: 17px;
+    padding-bottom: 16px;
+}
+
+.padding-to-main {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.no-pad-R {
+    padding-right: 0;
+    padding-left: 0px;
+}
+
+@media screen and (max-width:1285px) {
+    .foo {
+        float: left;
+        width: 15px;
+        height: 15px;
+        margin-left: 34px;
+    }
+}
+
+@media screen and (max-width:1080px) {
+    .empty-part {
+        width: 262px;
+    }
+    .catalog {
+        padding-top: 11px;
+    }
+    .blue-part {
+        height: 177px;
+    }
+    .pro-name {
+        font-size: 11px;
+    }
+    .demo .rating {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width:1068px) {
+    .pro-nav {
+        width: 100%;
+    }
+    .pagination a {
+        font-size: 12px;
+        float: right;
+        padding: 3px 7px;
+    }
+
+    .cata-brand label {
+        padding-right: 4px;
+        font-size: 12px;
+        position: relative;
+        top: 3px;
+    }
+    .cata-product label {
+        font-size: 12px;
+        padding: 4px;
+        position: relative;
+        top: 3px;
+    }
+    .foo {
+        float: left;
+        width: 15px;
+        height: 15px;
+        margin-left: 38px;
+        border: 1px solid rgba(0, 0, 0, .2);
+    }
+    .cata-color label {
+        font-size: 12px;
+    }
+    .search-bar {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .empty-part {
+        width: 186px;
+    }
+    .pagination a {
+        font-size: 10px;
+        float: right;
+        padding: 4px 7px;
+    }
+    .pro-nav ul li {
+        font-size: 12px;
+    }
+    .foo {
+        margin-left: 7px;
+    }
+    .cata-color label {
+        font-size: 10px;
+    }
+    .cata-product label {
+        font-size: 11px;
+        padding: 0;
+        position: relative;
+        top: 3px;
+    }
+    .cata-price h5 {
+        font-size: 11px;
+        font-weight: initial;
+    }
+    .cata-product h5 {
+        font-size: 11px;
+        font-weight: initial;
+    }
+    .cata-brand h5 {
+        font-size: 11px;
+        font-weight: initial;
+    }
+    .cata-color h5 {
+        font-size: 11px;
+        font-weight: initial;
+    }
+}
+
+@media screen and (max-width:880px) {
+    .pagination a {
+        font-size: 9px;
+        float: right;
+        padding: 4px 7px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .catalog {
+        margin-top: 36px;
+    }
+    .empty-part-2 {
+        display: none;
+    }
+    .pro-nav {
+        display: none;
+    }
+    .search-bar {
+        width: 100%;
+    }
+    .search-bar div {
+        text-align: center;
+    }
+    .search-bar div.col-sm-2 {
+        padding: 14px 26px;
+    }
+    .cata-brand, .cata-price, .cata-product, .cata-color {
+        display: flex;
+    }
+
+    .cata-brand h5, .cata-price h5, .cata-product h5, .cata-color h5 {
+        margin: 17px;
+    }
+    .foo {
+        width: 12px;
+        height: 12px;
+        margin-left: 17px;
+        margin-top: 4px;
+    }
+    .c-p {
+        right: -2px;
+        top: 20px;
+    }
+    .cata-price .ui-widget-content {
+        width: 45%;
+    }
+    .padding-to-main {
+        padding: 0px;
+        margin-bottom: 16px;
+    }
+    .color-item {
+        display: inline-flex;
+        position: relative;
+        top: 12px;
+    }
+    .pagination {
+        left: 49px;
+    }
+}
+
+@media screen and (max-width:512px) {
+    .foo {
+        display: none;
+    }
+}
+
+@media screen and (max-width:445px) {
+    .photoo {
+        width: 100%;
+    }
+}

@@ -1,0 +1,77 @@
+.register{
+  margin-top: 83px;
+  background-color: #fff;
+}
+.main-reg{
+  margin-top: 50px;
+}
+.box-reg{
+  width: 100%;
+}
+.box-reg p{
+  float: right;
+  margin: 18px 0px;
+  font-weight: 300;
+}
+.box-reg input{
+  float: left;
+  background-color: #1eb5bc;
+  color: #fff;
+  border: 0px;
+  text-align: left;
+  border-radius: 30px;
+  padding: 14px 22px;
+  width: 73%;
+  margin: 9px;
+}
+.submit-reg input{
+  float: left;
+border: 0px;
+background-color: #1eb5bc;
+color: #fff;
+padding: 12px 22px;
+border-radius: 27px;
+font-weight: 400;
+}
+.box-register{
+padding-right: 157px;
+}
+.box-register span{
+  padding-right: 34px;
+    font-size: 10px;
+}
+.box-register a{
+  color: #1eb5bc;
+font-weight: 600;
+}
+.box-before{
+  text-align: center;
+background-color: #7b7b7b;
+color: #fff;
+border-radius: 16px;
+padding: 7px 71px;
+float: left;
+margin: 27px 25px;
+}
+.box-before a{
+  color: #fdd634;
+    font-weight: 600;
+}
+@media screen and (max-width:1175px) {
+  .box-register {
+      padding-right: 137px;
+  }
+  .box-register span {
+    font-size: 9px;
+    padding-right: 21px;
+}
+
+}
+@media screen and (max-width:1058px){
+  .box-before {
+      padding: 5px 26px;
+  }
+  .box-register {
+    padding-right: 113px;
+}
+}

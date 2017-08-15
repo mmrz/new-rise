@@ -1,0 +1,38 @@
+.forget-page{
+  margin-top: 83px;
+  background-color: #fff;
+}
+.forg p{
+  width: 100%;
+  font-weight: 300;
+  padding: 10px 0px;
+}
+.forg{
+  text-align: center;
+  padding-top: 210px;
+  padding-bottom: 210px;
+}
+.one-inp{
+  background-color: #1eb5bc;
+color: #fff;
+text-align: left;
+border: 0px;
+border-radius: 21px;
+padding: 8px 23px;
+width: 330px;
+}
+.two-inp{
+  color: #fff;
+  background-color: #1eb5bc;
+  border: 0px;
+  padding: 8px 23px;
+  border-radius: 25px;
+  font-weight: 500;
+}
+.post label{
+      font-weight: 300;
+}
+.post{
+  padding: 30px 0px;
+
+}

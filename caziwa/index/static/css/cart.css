@@ -1,0 +1,298 @@
+.cart-page {
+    margin-top: 84px;
+}
+
+.news {
+    margin-top: 24px;
+}
+
+table thead tr th, table tbody tr th, table tfoot tr th {
+    font-weight: 400;
+}
+
+table thead tr th div, table tbody tr th div, table tfoot tr th div {
+    font-weight: 400;
+}
+
+.pro-nav {
+    padding-bottom: 7px;
+    background-color: #fff;
+    padding-top: 7px;
+    overflow: hidden;
+}
+
+.midel {
+    font-size: 13px;
+    margin-right: -44px;
+    margin-bottom: 0px;
+}
+
+.main {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.head-cart {
+    text-align: center;
+    color: #1eb5bc;
+    background-color: #fff;
+    border: 1px solid #1eb5bc;
+    border-radius: 7px;
+    margin-bottom: 7px;
+    font-weight: 900;
+}
+
+.head-cart p {
+    padding-top: 10px;
+}
+
+.explain {
+    width: 50%;
+    text-align: center;
+    background-color: #f1f1f1;
+    border-bottom: 4px solid #fff;
+    border-left: 4px solid #fff;
+}
+
+.money {
+    width: 25%;
+    text-align: center;
+    background-color: #f1f1f1;
+    border-bottom: 4px solid #fff;
+    border-left: 4px solid #fff;
+}
+
+.total {
+    width: 25%;
+    text-align: center;
+    background-color: #f1f1f1;
+    border-bottom: 4px solid #fff;
+}
+
+.body-cart table {
+    width: 100%;
+}
+
+.delete {
+    height: 65px;
+    text-align: center;
+    font-size: 36px;
+    margin-top: 49px;
+}
+
+.body-cart {
+    background-color: #fff;
+    border: 1px solid #1eb5bc;
+    border-radius: 7px;
+    margin-bottom: 7px;
+    padding: 15px 58px;
+    width: 100%;
+}
+
+.pic-shop {
+    width: 100%;
+}
+
+.photo {
+    text-align: center;
+    background-color: #f1f1f1;
+    border-bottom: 4px solid #fff;
+    border-left: 4px solid #fff;
+}
+
+.price-tabale {
+    text-align: center;
+    background-color: #f1f1f1;
+    border-bottom: 4px solid #fff;
+    border-left: 4px solid #fff;
+}
+
+.pice-total {
+    text-align: center;
+    background-color: #f1f1f1;
+    border-bottom: 4px solid #fff;
+}
+
+.footer-table {
+    background-color: #46c368;
+    color: #fff;
+}
+
+.footer-table th {
+    text-align: center;
+    font-weight: 900;
+}
+
+.order-table a button {
+    background-color: #1eb5bc;
+    color: #fff;
+    border: 0px;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+.order-table {
+    text-align: center;
+    margin-top: 12px;
+}
+
+.address textarea {
+    width: 100%;
+    background-color: #f1f1f1;
+    border: 0px;
+}
+
+.address label {
+    font-weight: 300;
+}
+
+.txt-bank {
+    font-weight: 300;
+    text-align: center;
+}
+
+.bank img {
+    margin: 2px;
+}
+
+table tr th {
+    padding: 8px;
+}
+
+.price-tabale span, .pice-total span {
+    color: #46c368;
+    font-size: 26px;
+}
+
+.photo img {
+    box-shadow: 1px 4px 13px #333;
+}
+
+.photo .pad-for-txts div {
+    padding: 14px 0px;
+}
+
+.one {
+    position: absolute;
+    top: 62px;
+    right: 0px;
+}
+
+.two {
+    position: absolute;
+    top: 121px;
+    right: 0px;
+}
+
+.bottom-L, .bottom-R {
+    text-align: center;
+    padding: 18px;
+}
+
+.bottom-L {
+    background-color: #46c368;
+    border-right: 6px solid #FFF;
+        font-weight: 900;
+        color: #fff;
+}
+
+.bottom-R {
+    background-color: #f1f1f1;
+    border-left: 6px solid #fff;
+    font-weight: 900;
+}
+.bazyabi-1{
+  color: #1eb5bc;
+    font-size: 21px;
+}
+.bazyabi-2{
+  font-size: 21px;
+}
+
+@media screen and (max-width:1199px) {
+    .header-top ul li a {
+        padding: 10px 10px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .header-top ul li a {
+        padding: 10px 8px;
+    }
+    .not-pad {
+        padding: 0px;
+    }
+    .bazyabi-1 {
+    font-size: 14px;
+}
+.bottom-L{
+  font-size: 13px;
+}
+.bazyabi-2 {
+    font-size: 13px;
+}
+}
+
+@media screen and (max-width:768px) {
+  .bank{
+    display: inline-flex;
+  }
+  .bottom-L, .bottom-R{
+    padding-bottom: 32px;
+  }
+    .cart-page {
+        margin-top: 33px;
+    }
+    .logo-img {
+        width: 67%;
+    }
+    .header-toggle i {
+        font-size: 43px;
+    }
+    .bottom-L, .bottom-R {
+        border: 0px;
+        margin-bottom: 4px;
+    }
+    .body-cart{
+      padding: 15px 1px;
+    }
+    .one{
+      top: 185px;
+right: -23px;
+    }
+    .two{
+      top: 514px;
+      right: -23px;
+    }
+}
+@media screen and (max-width:610px){
+  .pic-shop {
+      width: 84%;
+  }
+  .photo{
+    font-size: 10px;
+  }
+  .price-tabale span, .pice-total span{
+    font-size: 17px;
+  }
+  .price-tabale{
+    font-size: 11px;
+  }
+  .pice-total{
+    font-size: 10px;
+  }
+  .footer-table{
+    font-size: 12px;
+  }
+  .one {
+    top: 144px;
+    font-size: 26px;
+}
+.two {
+    top: 368px;
+    font-size: 26px;
+}
+.body-cart .col-xs-11{
+    padding-right: 8px;
+}
+}

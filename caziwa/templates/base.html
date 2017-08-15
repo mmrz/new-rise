@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width"> {% load static %}
+    <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+    <link rel="stylesheet" href="{% static 'css/material-design-iconic-font.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-slider.min.css' %}">
+    <!-- <link rel="stylesheet" href="{% static 'css/caziwa.css' %}"> -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap-rtl.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font.css' %}">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"> {% block head %} {% endblock %} </head>
+
+<body>
+    <!-- Navigation Bar -->
+    <div class="body-wrapper">
+        <div class="up-navbar">
+            <div class="container">
+                <div class="no-padding search-div col-sm-3 showw">
+                    <div class="header-search">
+                        <form method="get" action="/search">
+                            <input name="search-query" type="text" size="30" placeholder="جستجو..." />
+                            <i class="zmdi zmdi-search"></i>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+
+                </div>
+                <div class="col-sm-2 ">
+                    <a href="/" class="logo-holder">
+                        <img src="{% static 'img/CaziwaLogo.png' %}" class="img-responsive logo-img" alt="logo-img">
+                    </a>
+                </div>
+                <div class="header-toggle">
+                    <i class="zmdi zmdi-menu"></i>
+                </div>
+                <div class="col-sm-3">
+                    <div class="navbar-butum">
+                        <button type="button" name="button">هنرمندان در کازیوا</button>
+                        <button type="button" name="button">همکاری با کازیوا</button>
+                    </div>
+                </div>
+                <div class="col-sm-2 div-nam showw">
+                    <div class="log-div no-padding">
+
+                        {% if user.is_authenticated %}
+                            <a>{{ request.user.email }}</a>
+                            <form method="post" action="{% url 'logout' %}"><a href="{% url 'logout' %}" >signout</a></form>
+                            {% else %}
+                        <a class="reg-n-log" data-toggle="modal" data-target="#myModal">ورود</a>
+                        <a class="reg-n-log" href="{%   url 'signup' %}" id="signup">ثبت نام</a>
+                        {% endif %}
+
+
+
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ws-header">
+            <div class="container">
+                <div class="col-sm-2">
+
+                </div>
+                <div class="col-sm-8 not-pad">
+
+                    <div class="header-left">
+                        <div class="header-top">
+                            <div class="header-toggle">
+                                <i class="zmdi zmdi-close"></i>
+                            </div>
+
+
+                            <ul class="ws-main-header">
+                                {% for cat in categories %}
+                                <li class="ws-menu-holder"><a href="{% url 'product:category' category_slug=cat.cat_slug %}" class="ws-menu-toggle">{{ cat.name }}</a>
+
+
+                                    <div class="ws-menu">
+
+                                        <div class="col-sm-2 no-padding">
+                                            <ul>
+                                                {% for scat in cat.child.all %} {% if not forloop.first and forloop.counter|divisibleby:"6" %}
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-2 no-padding">
+                                            <ul>
+                                                {% endif %}
+                                                <li><a href="{% url 'product:subcategory' category_slug=cat.cat_slug subcategory_slug=scat.cat_slug %}">
+                                                    {{ scat.name }}
+                                                </a></li>
+                                                {% endfor %}
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-4 no-padding"></div>
+                                        <div class="col-sm-6 no-padding">
+                                            <img src="{% static 'img/logo.png' %}" class="img-responsive ws-menu-img" alt="">
+                                        </div>
+
+                                    </div>
+                                </li>
+
+
+                                {% endfor %}
+
+
+                                <div class="clearfix"></div>
+
+
+                        </div>
+                        <div class="second-layer">
+                            <div class="no-padding search-div col-sm-3">
+                                <div class="header-search">
+                                    <form method="get" action="search">
+                                        <input name="search-query" type="text" size="30" placeholder="جستجو..." />
+                                        <i class="zmdi zmdi-search"></i>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-sm-2 div-nam">
+                                <div class="log-div no-padding">
+                                    <a class="reg-n-log" data-toggle="modal" data-target="#myModal">ورود</a>
+                                    <a class="reg-n-log" data-toggle="modal" data-target="#myModal1">ثبت نام</a>
+
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            <div class="header-toggle">
+                                <i class="zmdi zmdi-remove"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-2">
+
+                </div>
+
+            </div>
+        </div>
+        <div class="clearfix"></div>
+{% include "login.html" %}
+    </div>
+
+    <!-- /Navigation Bar -->
+    {% block content %} {% endblock %}
+    <!-- Footer -->
+    <div class="container-fluid news">
+        عضویت در خبرنامه
+        <form method="post" id="SubscriptionsForm" action="{% url 'subscription' %}" class="news-form">
+            {% csrf_token %}
+            <input name="sub_email" class="input-news" type="text" title="ایمیل خود را وارد کنید" placeholder="آدرس ایمیل" >
+            <button type="submit" name="submit" class="news-btn"> ارسال</button>
+        </form>
+    </div>
+    <div class="container footer">
+        <div class="container">
+            <div class="col-sm-4 col-xs-6 foot-menu-right">
+                <ul>
+                    <li><a> درباره ی کازیوا</a></li>
+                    <li><a>تماس با کازیوا</a></li>
+                    <li><a>قوانین و مقررات</a></li>
+                    <li><a>فرصت های شغلی</a></li>
+                </ul>
+
+            </div>
+            <div class="col-sm-4 col-xs-6 contact-div">
+                <ul>
+                    <li>
+                        <a class="foot-email"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+info@caziwa.com
+</a>
+                    </li>
+                    <li>
+                        <a class="foot-phone"><i class="fa fa-phone" aria-hidden="true"></i>
+۰۲۱-۶۶-۴۱-۵۸-۹۶
+  </a>
+                    </li>
+                    <li>
+                        <a class="social-med teleg-foot"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+                        <a class="social-med"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a class="social-med"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+
+
+
+            </div>
+
+            <div class="clearfix foot-clearfix"></div>
+
+            <div class="col-sm-2 col-xs-6 portfolio-item">
+                <a href="#"><img class="img-responsive" src="http://placehold.it/160x160" alt=""></a>
+            </div>
+
+
+            <div class="col-sm-2 col-xs-6 portfolio-item">
+                <a href="#"><img class="img-responsive" src="http://placehold.it/160x160" alt=""></a>
+            </div>
+            <div class="clearfix"></div>
+
+
+        </div>
+    </div>
+    <div class="clearfix">
+
+    </div>
+    <a class="cart-btn" href="/cart">
+        <i class="zmdi zmdi-shopping-cart"></i>
+    </a>
+    <!-- /Footer -->
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/modernizr.js' %}"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/materialize.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap-slider.min.js' %}"></script>
+    <script>
+        $('.header-toggle').click(function() {
+            $('.header-left').toggleClass('vis')
+        })
+        $('.cart-btn-toggle').click(function() {
+            $('.cart-btn').toggleClass('vis')
+        });
+
+
+
+
+    </script>
+<script>
+    $(".contact").click(function(ev) { // for each edit contact url
+        ev.preventDefault(); // prevent navigation
+        var url = $(this).data("form"); // get the contact form url
+        $("#contactModal").load(url, function() { // load the url into the modal
+            $(this).modal('show'); // display the modal on url load
+        });
+        return false; // prevent the click propagation
+    });
+
+    $('.contact-form').live('submit', function() {
+        $.ajax({
+            type: $(this).attr('method'),
+            url: this.action,
+            data: $(this).serialize(),
+            context: this,
+            success: function(data, status) {
+                $('#contactModal').html(data);
+            }
+        });
+        return false;
+    });
+</script>
+
+    {% block script %} {% endblock %}
+</body>
+
+</html>

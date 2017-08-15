@@ -1,0 +1,298 @@
+<!DOCTYPE html> {% extends 'base.html' %} {% load static %} {% block head %}
+<title>سبد خرید</title>
+<link rel="stylesheet" href="{% static 'css/cart.css' %}"> {% endblock %} {% block content %}
+<div class=" cart-page">
+    <div class="pro-nav">
+      <div class="container">
+        <div class="col-sm-3">
+            <ul>
+                <li><a href="#">کازیوا</a></li>
+                <li><a href="#"><b>سبد خرید</b></a></li>
+            </ul>
+        </div>
+        <div class="col-sm-9">
+            <p class="midel"></p>
+        </div>
+        <div class="clearfix"></div>
+</div>
+    </div>
+    <div class="container">
+        <div class="col-sm-12 sol-xs-12">
+            <div class="main">
+                <div class="col-xs-12">
+                    <div class="head-cart" id="cart1">
+                        <p>سبد خرید شما</p>
+                    </div>
+                </div>
+                <div class="col-xs-12" id="1">
+                    <div class="body-cart col-xs-12">
+                        <div class="col-xs-11">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="explain">شرح محصول</th>
+                                        <th class="money">قیمت واحد</th>
+                                        <th class="total">قیمت کل</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    <tr>
+                                        <th class="photo">
+                                            <div class="col-sm-5">
+                                                <img class="pic-shop" src="{% static 'img/p9.jpg'%}">{{x.product_name}}
+                                            </div>
+                                            <div class="col-sm-7 pad-for-txts">
+                                                <div class="col-sm-12">
+                                                    ساعت دست ساز زنانه میو مدل ۶۵۰
+                                                </div>
+                                                <div class="col-sm-12">
+                                                    رنگ مشکی
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    تعداد
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <input type="number" name="" value="2" class="form-control form-tab">
+                                                </div>
+                                            </div>
+                                        </th>
+
+                                        <th class="price-tabale"><span>۳۸۰۰۰</span>تومان</th>
+                                        <th class="pice-total"><span>۷۶۰۰۰</span> تومان</th>
+
+                                    </tr>
+
+                                    <tr>
+                                        <th class="photo">
+                                            <div class="col-sm-5">
+                                                <img class="pic-shop" src="{% static 'img/p9.jpg'%}">{{x.product_name}}
+                                            </div>
+                                            <div class="col-sm-7 pad-for-txts">
+                                                <div class="col-sm-12">
+                                                    ساعت دست ساز زنانه میو مدل ۶۵۰
+                                                </div>
+                                                <div class="col-sm-12">
+                                                    رنگ مشکی
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    تعداد
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <input type="number" name="" value="2" class="form-control form-tab">
+                                                </div>
+                                            </div>
+                                        </th>
+
+                                        <th class="price-tabale"><span>۳۸۰۰۰</span>تومان</th>
+                                        <th class="pice-total"><span>۷۶۰۰۰</span> تومان</th>
+
+                                    </tr>
+
+                                </tbody>
+                                <tfoot>
+                                    <tr class="footer-table">
+                                        <th>مبلغ قابل پرداخت</th>
+                                        <th>114000 تومان</th>
+                                        <th></th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                        <div class="col-xs-1">
+
+                            <div class="delete col-xs-12">
+                                <a href="#" class="one"><i class="zmdi zmdi-delete"></i></a>
+                            </div>
+
+                            <div class="delete col-xs-12">
+                                <a href="#" class="two"><i class="zmdi zmdi-delete"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 order-table">
+                            <a href="#1" id="a"><button type="button" name="button">ادامه ثبت سفارش</button></a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-xs-12">
+                    <div class="head-cart" id="cart2">
+                        <p>نحوه ی ارسال</p>
+                    </div>
+                </div>
+                <div class="col-xs-12" id="2">
+                    <div class="body-cart col-xs-12">
+                      <div >
+                          <div class="col-xs-12 address">
+                              <label for="address">انتخاب آدرس</label>
+                              <textarea type="textarea" placeholder="" name="address"></textarea>
+                          </div>
+                          <div class="col-xs-12 address">
+                              <label for="address-add"> افزودن آدرس جدید</label>
+                              <textarea type="textarea" placeholder="" name="address-add"></textarea>
+                          </div>
+
+                      </div>
+                      <div class="col-xs-12 order-table">
+                          <a href="#" id="b"><button type="button" name="button">ادامه ثبت سفارش</button></a>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12">
+                    <div class="head-cart" id="cart3">
+                        <p>بازبینی نهایی</p>
+                    </div>
+                </div>
+                <div class="col-xs-12" id="3">
+                    <div class="body-cart col-xs-12">
+                      <div class="col-xs-12">
+                          <table>
+                              <thead>
+                                  <tr>
+                                      <th class="explain">شرح محصول</th>
+                                      <th class="money">قیمت واحد</th>
+                                      <th class="total">قیمت کل</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+
+                                  <tr>
+                                      <th class="photo">
+                                          <div class="col-sm-12 pad-for-txts">
+                                              <div class="col-sm-12">
+                                                  ساعت دست ساز زنانه میو مدل ۶۵۰
+                                              </div>
+                                              <div class="col-sm-12">
+                                                  رنگ مشکی
+                                              </div>
+                                              <div class="col-sm-6">
+                                                  تعداد
+                                              </div>
+                                              <div class="col-sm-6">
+                                                  <input type="number" name="" value="2" class="form-control form-tab">
+                                              </div>
+                                          </div>
+                                      </th>
+
+                                      <th class="price-tabale"><span>۳۸۰۰۰</span>تومان</th>
+                                      <th class="pice-total"><span>۷۶۰۰۰</span> تومان</th>
+
+                                  </tr>
+
+                                  <tr>
+                                      <th class="photo">
+                                          <div class="col-sm-12 pad-for-txts">
+                                              <div class="col-sm-12">
+                                                  ساعت دست ساز زنانه میو مدل ۶۵۰
+                                              </div>
+                                              <div class="col-sm-12">
+                                                  رنگ مشکی
+                                              </div>
+                                              <div class="col-sm-6">
+                                                  تعداد
+                                              </div>
+                                              <div class="col-sm-6">
+                                                  <input type="number" name="" value="2" class="form-control form-tab">
+                                              </div>
+                                          </div>
+                                      </th>
+
+                                      <th class="price-tabale"><span>۳۸۰۰۰</span>تومان</th>
+                                      <th class="pice-total"><span>۷۶۰۰۰</span> تومان</th>
+
+                                  </tr>
+
+                              </tbody>
+                              <tfoot>
+                              </tfoot>
+                          </table>
+                          <div class="col-sm-6 bottom-R">
+                              <div class=" col-xs-6"> هزینه ارسال</div>
+                              <div class="bazyabi-1 col-xs-6">۲۰۰۰۰تومان</div>
+                          </div>
+                          <div class="col-sm-6 bottom-L">
+                              <div class="no-padding col-xs-6">مبلغ قابل پرداخت</div>
+                              <div class="bazyabi-2 col-xs-6">۱۳۴۰۰۰  تومان</div>
+                          </div>
+                      </div>
+                      <div class="col-xs-12 order-table">
+                          <a href="#" id="c"><button type="button" name="button">ادامه ثبت سفارش</button></a>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12">
+                    <div class="head-cart" id="cart4">
+                        <p>پرداخت</p>
+                    </div>
+                </div>
+                <div class="col-xs-12" id="4">
+                    <div class="body-cart col-xs-12">
+
+                          <div class="col-sm-12 txt-bank">
+                              <p>انتخاب درگاه بانکی</p>
+                          </div>
+                          <div class="col-sm-2">
+
+                          </div>
+                          <div class="col-xs-12 col-sm-8 bank">
+                            <div class="col-sm-3">  <img src="http://placehold.it/100x100" alt=""></div>
+                            <div class="col-sm-3">  <img src="http://placehold.it/100x100" alt=""></div>
+                            <div class="col-sm-3">  <img src="http://placehold.it/100x100" alt=""></div>
+                            <div class="col-sm-3">  <img src="http://placehold.it/100x100" alt=""></div>
+                          </div>
+                          <div class="col-sm-2">
+
+                          </div>
+                          <div class="col-sm-12 order-table">
+                            <a href="#" id="d"><button type="button" name="button"> پرداخت </button></a>
+                          </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+{% endblock%} {% block script %}
+<script>
+$(document).ready(function(){
+        $("#2,#3,#4").hide();
+    });
+$(document).ready(function(){
+    $("#cart1").click(function(){
+        $("#1").slideToggle();
+    });
+    $("#cart2").click(function(){
+        $("#2").slideToggle();
+    });
+    $("#cart3").click(function(){
+        $("#3").slideToggle();
+    });
+    $("#cart4").click(function(){
+        $("#4").slideToggle();
+    });
+});
+$(document).ready(function(){
+  $("#a").click(function(){
+    $("#2").slideDown(5000);
+    $("#1").slideUp(5000);
+  });
+  $("#b").click(function(){
+    $("#3").slideDown(5000);
+    $("#2").slideUp(5000);
+  });
+  $("#c").click(function(){
+    $("#4").slideDown(5000);
+    $("#3").slideUp(5000);
+  });
+});
+</script>
+{% endblock %}

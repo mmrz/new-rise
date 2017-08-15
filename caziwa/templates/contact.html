@@ -1,0 +1,72 @@
+<!DOCTYPE html> {% extends 'base.html' %} {% load static %} {% block head %}
+<title>ارتباط با ما</title>
+<link rel="stylesheet" href="{% static 'css/contact.css' %}">{% endblock %} {% block content %}
+<div class="contact">
+    <div class="pro-nav">
+        <div class="container">
+            <div class="col-sm-12">
+                <ul>
+                    <li><a href="#">کازیوا</a></li>
+                    <li><a href="#"><b>هنرمندان</b></a></li>
+                </ul>
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <div class="content-box col-sm-12 no-padding ">
+        <div class="col-sm-3">
+
+        </div>
+        <div class="col-sm-6">
+            <div class="col-sm-12 titr">
+                کازیوا را در شبکه های مجازی دنبال کنید
+            </div>
+            <div class="col-sm-12">
+                <div class="png">
+                    <img src="{% static 'img/tel.png' %}" alt="logo">
+
+                    <img src="{% static 'img/insta.png' %}" alt="logo">
+
+                    <img src="{% static 'img/fb.png' %}" alt="logo">
+                </div>
+            </div>
+            <div class="col-sm-12 information">
+              <div class="half">
+                شماره تماس
+              </div>
+              <div class="half-2">
+                ۰۹۳۸۴۱۳۱۱۹۵
+              </div>
+            </div>
+            <div class="col-sm-12 information">
+              <div class="half">
+                email:
+              </div>
+              <div class="half-2">
+                caziwa@gmail.com
+              </div>
+            </div>
+            <div class="col-sm-12 adres">
+              آدرس:میدان فلسطین خیابان سرپرست پلاک ۵ طبقه ۶
+            </div>
+        </div>
+        <div class="col-sm-3">
+
+        </div>
+        <div class="col-sm-12 photo">
+          <img src="{% static 'img/tamas.png' %}" alt="">
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+{% endblock%} {% block script %}
+<script>
+</script>
+{% endblock %}

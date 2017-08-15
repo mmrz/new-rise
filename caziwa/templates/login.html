@@ -1,0 +1,61 @@
+
+
+
+
+
+        <div class="modal fade login-modal" id="myModal" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close circle" data-dismiss="modal">&times;</button>
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a data-toggle="tab" href="#home">ورود به کازیوا</a></li>
+                        </ul>
+
+                        <div class="tab-content">
+
+                            <form method="post" class="login_caziwa" id="LoginForm" action="{% url 'login' %}" class="news-form">
+                                {% csrf_token %}
+                                {{ form.as_p }}
+
+                                <div id="home" class="tab-pane fade in active">
+                                    <div class="modal-input first">
+                                        <div class="icon">
+                                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                        </div>
+                                        <input type="text" name="email"  placeholder="پست الکترونیکی">
+                                    </div>
+                                    <div class="modal-input">
+                                        <div class="icon-2">
+                                            <i class="zmdi zmdi-lock-outline"></i>
+                                        </div>
+                                        <input type="password" name="password"  placeholder="کلمه عبور">
+                                    </div>
+                                    <label class="ws-checkbox">
+                                    <span>مرا به خاطر بسپار.</span>
+                                    <input  name="remember" type="checkbox">
+                                    <div class="checkbox-stat">
+                                        <i class="fa fa-check"></i>
+                                    </div>
+                                </label>
+                                    <label for="forget" class="forget">
+                                     <a href="#">فراموشی رمز عبور</a>
+                                   </label>
+                                    <div class=" inp-login">
+                                        <button type="submit" name="submit" value="ورود">ورود</button>
+                                    </div>
+                                    {% for message in messages %}
+                                     <div class="alert alert-{{ message.tags }}">
+                                        {{ message|safe }}
+                                        {% endfor %}
+                                    <div class="modal-input txt-mod">
+                                      <p>قبلا در کازیوا ثبت نام کرده اید؟ <a>ثبت نام در کازیوا</a></p>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>

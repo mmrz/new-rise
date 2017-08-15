@@ -1,0 +1,49 @@
+.contact{
+  margin-bottom: 215px;
+}
+.pro-nav{
+  background-color: #fff;
+padding: 4px 0px;
+margin-top: 87px;
+}
+.content-box{
+  background-color: #1eb5bc;
+  position: relative;
+  text-align: center;
+  color: #fff;
+      margin-top: 14px;
+}
+.photo{
+  padding: 0px;
+  width: 100%;
+  position: relative;
+  bottom: 0px;
+}
+.photo img{
+  width: 100%;
+}
+.half{
+float: right;
+width: 50%;
+    font-size: 20px;
+}
+.half-2{
+  float: left;
+  width: 50%;
+      font-size: 20px;
+}
+.titr{
+  font-weight: 400;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.png{
+      padding: 31px 0px;
+}
+.information{
+      padding: 12px 0px;
+}
+.adres{
+      padding: 17px 0px;
+          font-size: 20px;
+}

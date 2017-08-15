@@ -1,0 +1,285 @@
+.categories {
+    margin-top: 14px;
+    padding: 0px 13px;
+}
+.news{
+      margin-top: -90px;
+}
+.pro-nav {
+    padding-bottom: 25px;
+    background-color: #fff;
+    padding-top: 7px;
+}
+
+.pro-nav .midel-meno li::after {
+    content: "";
+}
+
+.no-pad-left {
+    padding-left: 5px;
+}
+.margin-cashi{
+  margin-top: 13px;
+}
+.cashi {
+    margin-bottom: 453px;
+}
+
+
+.responsiv-pic {
+    width: 100%;
+}
+.padding-image {
+    padding-right: 0px;
+    padding-bottom: 9px;
+    padding-left: 9px;
+}
+
+.pad-img {
+    padding-right: 0px;
+    padding-left: 9px;
+}
+
+.pad-LR {
+    padding: 0px 50px;
+}
+.promo-owl * {}
+
+.promo-owl {
+    margin-top: -60px position: relative;
+}
+
+.promo-owl .owl-nav div, .portfolio-owl .owl-nav div {
+    position: absolute;
+    top: 45%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #eee;
+}
+
+.promo-owl .owl-nav, .portfolio-owl .owl-nav, .artists-owl .owl-nav {
+    transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    visibility: visible;
+    opacity: 1;
+}
+
+.promo-owl .owl-nav .disabled, .portfolio-owl .owl-nav .disabled, .artists-owl .owl-nav .disabled {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.promo-owl .owl-nav .disabled i, .portfolio-owl .owl-nav .disabled i {
+    color: #999;
+}
+
+.portfolio-owl .owl-nav i, .portfolio-owl .owl-nav i, .promo-owl .owl-nav i, .promo-owl .owl-nav i {
+    color: rgb(92, 147, 255);
+    font-size: 25px;
+    padding: 4px;
+    position: relative;
+}
+
+.portfolio-owl .owl-nav .owl-prev i, .promo-owl .owl-nav .owl-prev i {
+    left: -1px;
+    top: -2px;
+}
+
+.portfolio-owl .owl-nav .owl-next i, .promo-owl .owl-nav .owl-next i {
+    right: -2px;
+    top: -2px;
+}
+
+.portfolio-owl .owl-nav .owl-prev, .promo-owl .owl-nav .owl-prev {
+    left: -30px;
+}
+
+.portfolio-owl .owl-nav .owl-next, .promo-owl .owl-nav .owl-next {
+    right: -30px;
+}
+
+.promo-owl .owl-item {
+    position: relative;
+    z-index: 2;
+}
+
+
+.pad-to-prom {
+    padding: 0 50px;
+}
+
+.promo-pic {
+    display: block;
+    position: relative;
+    padding: 10px;
+}
+
+.promo-pic label {
+    font-size: 18px;
+    text-align: center;
+    display: block;
+}
+
+.prf, .pro-labal {
+    color: #000;
+    font-weight: 100;
+}
+
+.have-border {
+    background-color: #1eb5bc;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    color: #fff;
+    font-weight: 400;
+    margin: 0px 55px;
+    padding: 3px;
+}
+
+.promo-pic label.prf {
+    padding-top: 10px;
+}
+
+.prom-la {
+    background-color: #fff;
+    padding-bottom: 10px;
+}
+
+.promotions-background {
+    height: 250px;
+}
+
+.promo-img {
+    height: 300px;
+    width: 100%;
+    position: relative;
+    z-index: -2;
+}
+
+.promo-img img {
+    width: 100%;
+    height: 300px;
+}
+
+.promotions {
+    background-color: #f1f1f1;
+    text-align: center;
+    margin-top: -36px;
+    padding: 0 47px;
+    padding-bottom: 55px;
+    margin-top: 4px;
+}
+.promotions h3{
+  font-weight: 200;
+}
+
+.marg-up {
+    margin-top: -72px;
+}
+
+.artists {
+    position: relative;
+    top: -57px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 29px;
+    background-color: #1eb5bc;
+    background-image: url("../img/arti.jpg");
+    background-size: cover;
+    height: 330px;
+}
+
+.artists h3 {
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+.artists-owl {
+    margin-top: -60px
+    position: relative;
+    top: -24px;
+}
+
+.artists-owl .owl-item {
+    text-align: center;
+}
+
+.artists-owl a {
+    width: 150px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.artists-owl .owl-item a img {
+    width: 150px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 5px solid #fff;
+}
+
+.artists-owl .owl-nav>div {
+    position: absolute;
+    top: 40%;
+}
+
+.artists-owl .owl-nav>div i {
+    font-size: 25px;
+    color: rgb(255, 207, 62)
+}
+
+.artists-owl .owl-nav>.owl-prev {
+    right: 0;
+}
+
+.artists-owl .owl-nav>.owl-next {
+    left: 0;
+}
+
+.artists-lab {
+    background-color: #fff;
+    width: 80%;
+    text-align: -webkit-center;
+    margin: auto;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.artists-lab label {
+    display: block;
+    color: #000;
+    font-size: 13px;
+}
+
+.artists-lab label:first-child {
+    margin-top: 21px;
+    padding-top: 4px;
+    margin-bottom: 1px;
+}
+
+.artists-lab label:last-child {
+    padding-bottom: 3px;
+}
+
+
+@media screen and (max-width:992px) {
+    .two-col {
+        left: 4px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .one-col {
+        margin-right: 2px;
+        margin-top: -3px;
+    }
+    .one-col img {
+        width: 101%;
+        margin-top: 7px;
+    }
+}
