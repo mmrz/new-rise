@@ -95,12 +95,12 @@ class Product(models.Model):
         choices=GENDER_CHOICES,
         default='B'
     )
+    pic = models.ForeignKey('Image', 'id', related_name='pic', null=True, blank=True)
     artist = models.ForeignKey(Artist,
                                on_delete=models.CASCADE,
                                blank=True,
                                null=True)
     main_image = models.ImageField(null=True, )
-    similars = models.ManyToManyField('Product')
 
     def __str__(self):
         return self.name
@@ -122,14 +122,16 @@ class Image(models.Model):
 
 
 class Comment(models.Model):
-    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    product = models.ForeignKey('Product', on_delete=models.CASCADE)
     users = models.ForeignKey(settings.AUTH_USER_MODEL)
-    text = models.CharField(max_length=100)
-    rate = models.IntegerField(default=1)
+    cm_text = models.CharField(max_length=100, blank=False)
+    likes = models.IntegerField(default=1)
+    date = models.DateTimeField(default=timezone.now)
 
-    class Meta:
-        app_label = 'Product'
-        db_table = 'comments'
+    def __str__(self):
+        return self.cm_text
+
+
 
 
 class ProductSize(models.Model):
@@ -163,3 +165,20 @@ class Size(models.Model):
         return self.size
 
 
+class CatImage(models.Model):
+    banner_one = models.ImageField(upload_to='', blank=True)
+    banner_two = models.ImageField(upload_to='', blank=True)
+    banner_three = models.ImageField(upload_to='', blank=True)
+    banner_four = models.ImageField(upload_to='', blank=True)
+    banner_five = models.ImageField(upload_to='', blank=True)
+    banner_six = models.ImageField(upload_to='', blank=True)
+    banner_seven = models.ImageField(upload_to='', blank=True)
+    banner_eight = models.ImageField(upload_to='', blank=True)
+    banner_nine = models.ImageField(upload_to='', blank=True)
+    banner_ten = models.ImageField(upload_to='', blank=True)
+    subcategory = models.ForeignKey('Category', on_delete=models.CASCADE)
+
+
+class CatSlider(models.Model):
+    slider_image = models.ImageField(upload_to='', blank=True)
+    subcategory = models.ForeignKey('Category', on_delete=models.CASCADE)
