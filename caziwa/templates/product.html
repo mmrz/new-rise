@@ -9,9 +9,9 @@
             <div class="col-sm-12">
                 <ul>
                     <li><a href="#">خانه</a></li>
-                    <li><a href="#">زیورآلات</a></li>
-                    <li><a href="#">گوشواره</a></li>
-                    <li><a href="#"><b>ساعت دست ساز زنانه میو مدل ۶۵۰</b></a></li>
+                    <li><a href="#">{{ category.name }}</a></li>
+                    <li><a href="#">{{ subcategory.name }}</a></li>
+                    <li><a href="#"><b>{{ product.name }}</b></a></li>
                 </ul>
             </div>
         </div>
@@ -19,7 +19,7 @@
     <div class="top-meno container">
 
         <div class=" pro-main-det ">
-            <h4>ساعت دست ساز زنانه میو مدل ۶۵۰</h4>
+            <h4>{{ product.name }}</h4>
             <h5>تولید کننده : سام</h5>
             <img class="img-pr" src="{% static 'img/sample.jpeg' %}" alt="">
             <p>
@@ -155,7 +155,21 @@
         <div class="panel with-nav-tabs panel-default">
             <div class="panel-body">
                 <div class="tab-content">
-                    <div class="tab-pane fade in active" id="tab1default">Default 1</div>
+                    <div class="tab-pane fade in active" id="tab1default">
+                        <div id="msg_cm"></div>
+                        <form method="POST"  id="CommentForm" onsubmit="return false;">
+                            {% csrf_token %}
+                            {{ form.as_p }}
+{#                            <label>نظر شما</label></label><input type="text">{{ comment.cm_text }}</input>#}
+{#                             <label>نام</label><input type="text" placeholder="{{ request.user.email }}"></input>#}
+                            <button type="submit" id="comment" onclick="Sub()">send</button>
+                        </form>
+                        {% for cm in comments %}
+                            <h4>{{ cm.users }}</h4>
+                            <p>{{ cm.cm_text }}</p>
+                            <hr>
+                        {% endfor %}
+                    </div>
                     <div class="tab-pane fade" id="tab2default">Default 2</div>
 
                 </div>
@@ -233,6 +247,7 @@
 </div>
 {% endblock %} {% block script %}
 <script src="{% static 'js/lightgallery.js'%}"></script>
+
 <script>
 $(document).ready(function() {
     $("#lightgallery").lightGallery({
@@ -294,5 +309,18 @@ $(document).ready(function() {
         });
     });
 
+    $(document).ready(function() {
+        $('#CommentForm').submit(function() { // catch the form's submit event
+            $.ajax({ // create an AJAX call...
+                data: $(this).serialize(), // get the form data
+                type: $(this).attr('method'), // GET or POST
+                url: $(this).attr('action'), // the file to call
+                success: function(response) { // on success..
+                    $("#msg_cm").html("کامنت شما با موفقیت ثبت شد.");
+                }
+            });
+            return false;
+        });
+    });
 </script>
 {% endblock %}
