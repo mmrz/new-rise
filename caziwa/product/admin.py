@@ -1,6 +1,6 @@
 from django.contrib import admin
 from .models import ProductPrice, Product, Category, Image, ProductQuantity, ProductOption, Option, CategoryOption,\
-    ProductPriceOption, ProductColor, ProductSize, Color, Size
+    ProductPriceOption, ProductColor, ProductSize, Color, Size, Comment, CatSlider, CatImage
 from django.contrib.admin.options import StackedInline
 from nested_inline.admin import NestedStackedInline, NestedModelAdmin
 
@@ -49,7 +49,7 @@ class ProductAdmin(admin.ModelAdmin):
     fieldsets = (
             ('Main', {
                 'fields': ('name', 'category', 'description_short', 'description', 'add_date', 'active',
-                           'caziwa_suggest', 'gender', 'artist', 'main_image','similars', ),
+                           'caziwa_suggest', 'gender', 'pic', 'artist', 'main_image', ),
                 'classes': ('baton-tabs-init', 'baton-tab-inline-image',  'baton-tab-fs-content',),
                 'description': 'This is a description text'
 
@@ -115,4 +115,6 @@ admin.site.register(ProductColor, ColorAdmin)
 admin.site.register(ProductSize, SizeAdmin)
 admin.site.register(Color)
 admin.site.register(Size)
-
+admin.site.register(Comment)
+admin.site.register(CatSlider)
+admin.site.register(CatImage)
