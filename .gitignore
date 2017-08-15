@@ -12,7 +12,7 @@
 /caziwa/product/__pycache__/**
 /caziwa/payment/__pycache__/**
 /caziwa/caziwa/__pycache__/**
-/caziwa/users/migrations/*.py
-/caziwa/index/migrations/*.py
-/caziwa/product/migrations/*.py
-/caziwa/payment/migrations/*.py
+/caziwa/users/migrations/__pycache__/**
+/caziwa/index/migrations/__pycache__/**
+/caziwa/product/migrations/__pycache__/**
+/caziwa/payment/migrations/__pycache__/**

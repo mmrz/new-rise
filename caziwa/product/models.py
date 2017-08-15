@@ -100,7 +100,7 @@ class Product(models.Model):
                                blank=True,
                                null=True)
     main_image = models.ImageField(null=True, )
-    similars = models.ManyToManyField('Product')
+    similars = models.ManyToManyField('Product', blank=True)
 
     def __str__(self):
         return self.name
